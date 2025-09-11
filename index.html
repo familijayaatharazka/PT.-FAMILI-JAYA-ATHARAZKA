@@ -4,14 +4,30 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PT. FAMILI JAYA ATHARAZKA - Jasa Antar Jemput Travel</title>
+<meta name="description" content="PT. FAMILI JAYA ATHARAZKA melayani jasa travel antar jemput Dumai - Pekanbaru - Jambi dengan armada nyaman, aman, dan driver profesional.">
+<meta name="keywords" content="Travel Dumai Pekanbaru, Travel Dumai Jambi, Jasa Travel Riau, PT Famili Jaya Atharazka, Travel Door to Door">
+<meta name="author" content="PT. Famili Jaya Atharazka">
+
+<!-- Open Graph untuk share di WhatsApp / Facebook -->
+<meta property="og:title" content="PT. FAMILI JAYA ATHARAZKA - Travel Dumai Pekanbaru Jambi">
+<meta property="og:description" content="Layanan travel door-to-door aman & nyaman. Armada unggulan Kijang Inova Reborn.">
+<meta property="og:url" content="https://naylagunawan016-netizen.github.io/PT.-FAMILI-JAYA-ATHARAZKA/">
+<meta property="og:type" content="website">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="favicon.png">
+
+<!-- TailwindCSS -->
 <script src="https://cdn.tailwindcss.com"></script>
+
 <!-- SwiperJS CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 <style>
     body { font-family: 'Inter', sans-serif; }
     .hero-bg { background: linear-gradient(to right, #f8fafc, #e2e8f0); }
     .swiper { width: 100%; height: auto; }
-    .swiper-slide img { width: 100%; border-radius: 0.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+    .swiper-slide img { width: 100%; border-radius: 0.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); opacity: 0; transition: opacity 1s ease-in-out; }
+    .swiper-slide-active img { opacity: 1; }
 </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -42,23 +58,33 @@
 <!-- Hero Section -->
 <section class="hero-bg pt-24 pb-16">
   <div class="container mx-auto px-6 text-center">
-      <h2 class="text-4xl font-extrabold text-gray-800 mb-4">Antar Jemput Travel Aman & Nyaman</h2>
-      <p class="text-lg text-gray-600 mb-8">Layanan antar jemput travel dalam dan luar kota Dumai - Pekanbaru - Jambi dengan armada unggulan Kijang Inova Reborn. Cepat, aman, dan tepat waktu.</p>
-      <a href="https://wa.me/6281218838408" class="bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 transition">Reservasi via WhatsApp</a>
+      <h2 class="text-4xl font-extrabold text-gray-800 mb-4">Antar Jemput Travel Dumai - Pekanbaru - Jambi Aman & Nyaman</h2>
+      <p class="text-lg text-gray-600 mb-8">
+        PT. FAMILI JAYA ATHARAZKA menyediakan layanan <strong>travel antar jemput Dumai ke Pekanbaru dan Jambi</strong> dengan armada unggulan Kijang Inova Reborn. Door-to-door, aman, nyaman, dan tepat waktu.
+      </p>
+      <a href="https://wa.me/6281218838408" class="bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 transition">
+        Reservasi via WhatsApp
+      </a>
   </div>
 </section>
 
 <!-- About Section -->
 <section id="about" class="py-16 bg-white">
   <div class="container mx-auto px-6">
-      <h3 class="text-3xl font-bold text-center text-gray-800 mb-8">Tentang PT. FAMILI JAYA ATHARAZKA</h3>
+      <h3 class="text-3xl font-bold text-center text-gray-800 mb-8">
+        Tentang PT. FAMILI JAYA ATHARAZKA
+      </h3>
       <div class="md:flex md:items-center">
           <div class="md:w-1/2 mb-8 md:mb-0">
-              <img src="Gambar_2.jpg" alt="Armada Kijang Inova Reborn" class="rounded-lg shadow-md w-full">
+              <img src="Gambar_2.jpg" alt="Armada Kijang Inova Reborn Travel Dumai-Pekanbaru" class="rounded-lg shadow-md w-full">
           </div>
           <div class="md:w-1/2 md:ml-8">
-              <p class="text-gray-600 mb-4">PT. FAMILI JAYA ATHARAZKA adalah perusahaan transportasi terpercaya yang melayani jasa antar jemput travel dalam dan luar kota dari Dumai ke Pekanbaru dan Jambi. Dengan armada Kijang Inova Reborn yang nyaman, kami memastikan perjalanan Anda aman, tepat waktu, dan memuaskan.</p>
-              <p class="text-gray-600">Didukung oleh tim profesional dan teknologi tracking modern, kami berkomitmen memberikan solusi transportasi terbaik untuk segala kebutuhan Anda.</p>
+              <p class="text-gray-600 mb-4">
+                PT. FAMILI JAYA ATHARAZKA adalah <strong>perusahaan travel terpercaya di Riau</strong> yang melayani rute <strong>Dumai ke Pekanbaru dan Jambi</strong>. Dengan armada Kijang Inova Reborn, kami pastikan perjalanan Anda aman, nyaman, dan tepat waktu.
+              </p>
+              <p class="text-gray-600">
+                Didukung tim profesional, teknologi tracking modern, dan layanan door-to-door, kami memberikan solusi transportasi terbaik untuk segala kebutuhan Anda.
+              </p>
           </div>
       </div>
   </div>
@@ -70,8 +96,8 @@
       <h3 class="text-3xl font-bold text-center text-gray-800 mb-8">Galeri Kegiatan</h3>
       <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="Gambar_2.jpg" alt="Galeri aktivitas 1"></div>
-              <div class="swiper-slide"><img src="Gambar_3.jpg" alt="Galeri aktivitas 2"></div>
+              <div class="swiper-slide"><img src="Gambar_2.jpg" alt="Galeri aktivitas 1 Dumai-Pekanbaru"></div>
+              <div class="swiper-slide"><img src="Gambar_3.jpg" alt="Galeri aktivitas 2 Dumai-Jambi"></div>
               <div class="swiper-slide"><img src="Gambar_4.jpg" alt="Galeri aktivitas 3"></div>
               <div class="swiper-slide"><img src="Gambar_5.jpg" alt="Galeri aktivitas 4"></div>
               <div class="swiper-slide"><img src="Gambar_6.jpg" alt="Galeri aktivitas 5"></div>
@@ -98,7 +124,6 @@
           <a href="https://maps.app.goo.gl/GP9MjSvBj1Xh6LMG7?g_st=aw" class="text-green-600 hover:underline">Lihat di Google Maps</a>
       </div>
   </div>
-
   <div class="relative w-full h-screen mt-4">
       <iframe 
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63322.294!2d101.447!3d0.507!2m3!1f0!2f0!3f0!3m2!1i1024!2ji768!4f13.1!3m3!1m2!1s0x31d5c3becd1e5a9!2sPekanbaru%2C%20Riau!5e0!3m2!1sid!2sid!4v1698765432109!5m2!1sid!2sid" 
@@ -118,29 +143,16 @@
 <section id="contact" class="py-16 bg-gray-100">
   <div class="container mx-auto px-6">
       <h3 class="text-3xl font-bold text-center text-gray-800 mb-8">Hubungi Kami</h3>
-      
-      <div class="max-w-3xl mx-auto grid gap-8 md:grid-cols-2 text-center">
-
-        <!-- Dumai -->
-        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-          <h4 class="text-2xl font-semibold text-gray-800 mb-4">Whatsapp Dumai</h4>
-          <p class="text-gray-600 mb-2">Hubungi tim kami untuk info travel Dumai:</p>
-          <p class="text-green-600 font-semibold">
-            <a href="https://wa.me/6281218838408" target="_blank">0812-1883-8408</a><br>
-            <a href="https://wa.me/6282284379584" target="_blank">0822-8437-9584</a>
+      <div class="text-center mb-8">
+          <p class="text-gray-600 mb-4">Hubungi tim kami melalui WhatsApp untuk informasi dan reservasi travel antar jemput.</p>
+          <p class="text-gray-700 font-semibold">WA Dumai: 
+            <a href="https://wa.me/6281218838408" class="text-green-600 hover:underline">0812-1883-8408</a> - 
+            <a href="https://wa.me/6282284379584" class="text-green-600 hover:underline">0822-8437-9584</a>
           </p>
-        </div>
-
-        <!-- Pekanbaru -->
-        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-          <h4 class="text-2xl font-semibold text-gray-800 mb-4">Whatsapp Pekanbaru</h4>
-          <p class="text-gray-600 mb-2">Hubungi tim kami untuk info travel Pekanbaru:</p>
-          <p class="text-green-600 font-semibold">
-            <a href="https://wa.me/6281267823230" target="_blank">0812-6782-3230</a><br>
-            <a href="https://wa.me/6282284406975" target="_blank">0822-8440-6975</a>
+          <p class="text-gray-700 font-semibold">WA Pekanbaru: 
+            <a href="https://wa.me/6281267823230" class="text-green-600 hover:underline">0812-6782-3230</a> - 
+            <a href="https://wa.me/6282284406975" class="text-green-600 hover:underline">0822-8440-6975</a>
           </p>
-        </div>
-
       </div>
   </div>
 </section>
@@ -157,22 +169,13 @@
 <script>
     const swiper = new Swiper('.mySwiper', {
         loop: true,
-        effect: 'fade', // Animasi fade
-        fadeEffect: { crossFade: true },
+        effect: 'fade',
         spaceBetween: 20,
         slidesPerView: 1,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        autoplay: {
-            delay: 4000,
-            disableOnInteraction: false,
-        }
+        navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+        pagination: { el: '.swiper-pagination', clickable: true },
+        autoplay: { delay: 3000 },
+        fadeEffect: { crossFade: true }
     });
 
     function toggleMenu() {

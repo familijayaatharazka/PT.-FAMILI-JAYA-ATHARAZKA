@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PT. FAMILI JAYA ATHARAZKA | Travel Dumai - Pekanbaru - Jambi</title>
+  <title>PT. FAMILI JAYA ATHARAZKA – Travel Dumai - Pekanbaru - Jambi</title>
   <meta name="description" content="PT. FAMILI JAYA ATHARAZKA melayani jasa travel antar jemput Dumai - Pekanbaru - Jambi dengan armada nyaman, aman, dan driver profesional.">
   <meta name="keywords" content="Travel Dumai Pekanbaru, Travel Dumai Jambi, Jasa Travel Riau, PT Famili Jaya Atharazka, Travel Door to Door">
   <meta name="author" content="PT. Famili Jaya Atharazka">
 
-  <!-- Open Graph untuk share di WhatsApp / Facebook -->
+  <!-- Open Graph untuk share -->
   <meta property="og:title" content="PT. FAMILI JAYA ATHARAZKA - Travel Dumai Pekanbaru Jambi">
   <meta property="og:description" content="Layanan travel door-to-door aman & nyaman. Armada unggulan Kijang Innova Reborn.">
   <meta property="og:url" content="https://naylagunawan016-netizen.github.io/PT.-FAMILI-JAYA-ATHARAZKA/">
@@ -16,55 +16,137 @@
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- SwiperJS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .hero-bg { background: linear-gradient(to right, #f8fafc, #e2e8f0); }
+    .swiper { width: 100%; height: auto; }
+    .swiper-slide img { width: 100%; border-radius: 0.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+  </style>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800">
+
   <!-- Header -->
-  <header>
-    <h1>PT. FAMILI JAYA ATHARAZKA</h1>
-    <h2>Jasa Travel Dumai - Pekanbaru - Jambi</h2>
-    <p>Armada nyaman, aman, tepat waktu dengan layanan antar jemput door-to-door.</p>
+  <header class="bg-white shadow-md fixed top-0 w-full z-10">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="Gambar_1.jpg" alt="Logo PT FAMILI JAYA ATHARAZKA" class="h-10 mr-4">
+        <h1 class="text-2xl font-bold text-gray-700">PT. FAMILI JAYA ATHARAZKA</h1>
+      </div>
+      <nav class="hidden md:flex space-x-6">
+        <a href="#about" class="hover:text-green-600 transition">Tentang Kami</a>
+        <a href="#gallery" class="hover:text-green-600 transition">Galeri</a>
+        <a href="#locations" class="hover:text-green-600 transition">Lokasi</a>
+        <a href="#contact" class="hover:text-green-600 transition">Kontak</a>
+      </nav>
+      <button class="md:hidden text-gray-700" onclick="toggleMenu()">☰</button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white pb-4 px-6">
+      <a href="#about" class="block py-2 hover:text-green-600">Tentang Kami</a>
+      <a href="#gallery" class="block py-2 hover:text-green-600">Galeri</a>
+      <a href="#locations" class="block py-2 hover:text-green-600">Lokasi</a>
+      <a href="#contact" class="block py-2 hover:text-green-600">Kontak</a>
+    </div>
   </header>
 
-  <!-- Layanan -->
-  <section>
-    <h2>Layanan Travel Kami</h2>
-    <ul>
-      <li>Travel Dumai - Pekanbaru (PP)</li>
-      <li>Travel Dumai - Jambi (PP)</li>
-      <li>Layanan antar jemput alamat (door-to-door)</li>
-      <li>Armada unggulan Toyota Kijang Innova Reborn</li>
-      <li>Driver berpengalaman, ramah, dan profesional</li>
-    </ul>
+  <!-- Hero Section -->
+  <section class="hero-bg pt-24 pb-16 text-center">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-extrabold text-gray-800 mb-4">Antar Jemput Travel Aman & Nyaman</h2>
+      <p class="text-lg text-gray-600 mb-8">Layanan antar jemput travel dalam dan luar kota Dumai - Pekanbaru - Jambi dengan armada unggulan Kijang Innova Reborn. Cepat, aman, dan tepat waktu.</p>
+      <a href="https://wa.me/6281218838408" class="bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 transition">Reservasi via WhatsApp</a>
+    </div>
   </section>
 
-  <!-- Jadwal -->
-  <section>
-    <h2>Jadwal Keberangkatan</h2>
-    <p>Keberangkatan setiap hari pagi, siang, dan malam dari Dumai, Pekanbaru, dan Jambi.</p>
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center text-gray-800 mb-8">Tentang PT. FAMILI JAYA ATHARAZKA</h3>
+      <div class="md:flex md:items-center">
+        <div class="md:w-1/2 mb-8 md:mb-0">
+          <img src="Gambar_2.jpg" alt="Armada Kijang Inova Reborn" class="rounded-lg shadow-md w-full">
+        </div>
+        <div class="md:w-1/2 md:ml-8">
+          <p class="text-gray-600 mb-4">PT. FAMILI JAYA ATHARAZKA adalah perusahaan transportasi terpercaya yang melayani jasa antar jemput travel dalam dan luar kota dari Dumai ke Pekanbaru dan Jambi. Dengan armada Kijang Inova Reborn yang nyaman, kami memastikan perjalanan Anda aman, tepat waktu, dan memuaskan.</p>
+          <p class="text-gray-600">Didukung oleh tim profesional dan teknologi tracking modern, kami berkomitmen memberikan solusi transportasi terbaik untuk segala kebutuhan Anda.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Kontak -->
-  <section>
-    <h2>Hubungi Kami</h2>
-    <p>📍 Alamat: Dumai, Riau</p>
-    <p>📞 Telepon/WhatsApp: <a href="https://wa.me/628xxxxxxxxxx">+62 8xx-xxxx-xxxx</a></p>
-    <p>🌐 Website: <a href="https://naylagunawan016-netizen.github.io/PT.-FAMILI-JAYA-ATHARAZKA/">PT Famili Jaya Atharazka</a></p>
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center text-gray-800 mb-8">Galeri Kegiatan</h3>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="Gambar_2.jpg" alt="Galeri aktivitas 1"></div>
+          <div class="swiper-slide"><img src="Gambar_3.jpg" alt="Galeri aktivitas 2"></div>
+          <div class="swiper-slide"><img src="Gambar_4.jpg" alt="Galeri aktivitas 3"></div>
+          <div class="swiper-slide"><img src="Gambar_5.jpg" alt="Galeri aktivitas 4"></div>
+          <div class="swiper-slide"><img src="Gambar_6.jpg" alt="Galeri aktivitas 5"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination mt-4"></div>
+      </div>
+    </div>
   </section>
 
-  <!-- Testimoni -->
-  <section>
-    <h2>Apa Kata Penumpang?</h2>
-    <blockquote>
-      "Travelnya nyaman banget, driver ramah dan tepat waktu. Recommended!"
-    </blockquote>
-    <blockquote>
-      "Armada bersih, AC dingin, perjalanan Dumai - Pekanbaru lancar."
-    </blockquote>
+  <!-- Locations Section -->
+  <section id="locations" class="py-0 bg-white">
+    <div class="relative w-full h-screen">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18..." allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="absolute top-0 left-0 w-full h-full border-0"></iframe>
+      <div class="absolute bottom-4 left-4 bg-white bg-opacity-80 p-4 rounded shadow-md">
+        <h4 class="font-bold text-gray-800">Kantor Dumai</h4>
+        <a href="https://maps.app.goo.gl/GP9MjSvBj1Xh6LMG7?g_st=aw" class="text-green-600 hover:underline">Lihat di Google Maps</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold text-gray-800 mb-8">Hubungi Kami</h3>
+      <p class="text-gray-600 mb-4">Hubungi tim kami melalui WhatsApp untuk informasi dan reservasi travel antar jemput.</p>
+      <p class="text-gray-700 font-semibold">Whatsapp Dumai: <a href="https://wa.me/6281218838408" class="text-green-600 hover:underline">+62 812 1883 8408</a></p>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <p>© 2025 PT. Famili Jaya Atharazka | Travel Dumai - Pekanbaru - Jambi</p>
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-6 text-center">
+      <p>© 2025 PT. FAMILI JAYA ATHARAZKA. Semua hak dilindungi.</p>
+    </div>
   </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      loop: true,
+      spaceBetween: 20,
+      slidesPerView: 1,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
 </body>
 </html>

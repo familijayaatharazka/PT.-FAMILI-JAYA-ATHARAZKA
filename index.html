@@ -114,7 +114,7 @@
   </div>
 </section>
 
-<!-- Contact Section (Rapi & Klikable) -->
+<!-- Contact Section -->
 <section id="contact" class="py-16 bg-gray-100">
   <div class="container mx-auto px-6">
       <h3 class="text-3xl font-bold text-center text-gray-800 mb-8">Hubungi Kami</h3>
@@ -126,8 +126,8 @@
           <h4 class="text-2xl font-semibold text-gray-800 mb-4">Whatsapp Dumai</h4>
           <p class="text-gray-600 mb-2">Hubungi tim kami untuk info travel Dumai:</p>
           <p class="text-green-600 font-semibold">
-            <a href="https://wa.me/6281218838408" target="_blank" rel="noopener">+62 812 1883 8408</a> <br>
-            <a href="https://wa.me/6282284379584" target="_blank" rel="noopener">+62 822 8437 9584</a>
+            <a href="https://wa.me/6281218838408" target="_blank">0812-1883-8408</a><br>
+            <a href="https://wa.me/6282284379584" target="_blank">0822-8437-9584</a>
           </p>
         </div>
 
@@ -136,8 +136,8 @@
           <h4 class="text-2xl font-semibold text-gray-800 mb-4">Whatsapp Pekanbaru</h4>
           <p class="text-gray-600 mb-2">Hubungi tim kami untuk info travel Pekanbaru:</p>
           <p class="text-green-600 font-semibold">
-            <a href="https://wa.me/6281267823230" target="_blank" rel="noopener">+62 812 6782 3230</a> <br>
-            <a href="https://wa.me/6282284406975" target="_blank" rel="noopener">+62 822 8440 6975</a>
+            <a href="https://wa.me/6281267823230" target="_blank">0812-6782-3230</a><br>
+            <a href="https://wa.me/6282284406975" target="_blank">0822-8440-6975</a>
           </p>
         </div>
 
@@ -157,6 +157,8 @@
 <script>
     const swiper = new Swiper('.mySwiper', {
         loop: true,
+        effect: 'fade', // Animasi fade
+        fadeEffect: { crossFade: true },
         spaceBetween: 20,
         slidesPerView: 1,
         navigation: {
@@ -167,6 +169,10 @@
             el: '.swiper-pagination',
             clickable: true,
         },
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        }
     });
 
     function toggleMenu() {

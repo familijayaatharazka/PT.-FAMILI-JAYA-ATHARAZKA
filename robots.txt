@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://familijayaatharazka.github.io/PT.-FAMILI-JAYA-ATHARAZKA/sitemap.xml
